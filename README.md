@@ -2,12 +2,12 @@
  
 
 
-Teamviewer setup
+#### Teamviewer setup
 
 > https://github.com/teddybugs/teamviewerongooglecloud
  
 
-Commands required for Cuckoo installation
+#### Commands required for Cuckoo installation
 
 ```
 sudo apt update
@@ -67,11 +67,11 @@ sudo apt-get -y install zlib1g-dev libjpeg-dev
 sudo apt-get -y install python-pip python-virtualenv python-setuptools swig
 ```
 
-Virtual machine setup can be done with vmcloak
+Virtual machine setup can be done with vmcloak.
 ```
 pip install -U vmcloak
 ```
-Host-only Networking  Settings
+Host-only Networking  Settings:
 
 ```
 vmcloak-vboxnet0
@@ -85,7 +85,7 @@ sudo iptables -A FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT
 sudo iptables -A FORWARD -s 192.168.56.0/24 -j ACCEPT
 ```
 
-Creating a virtual machine
+Creating a virtual machine:
 
 ```
 vmcloak init --verbose --win7x64 win7x64base --cpus 2 --ramsize 2048
